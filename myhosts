@@ -10,6 +10,6 @@
 172.31.42.164
 172.31.24.111
 
-[mywebservders:vars]
+[mywebservers:vars]
 mywebpackonubuntu=apache2
 mywebserveronredhat=httpd
