@@ -6,11 +6,6 @@
 172.31.42.16
 172.31.24.11
 
-
-[mydbservers]
+[myDBservers]
 172.31.42.164
 172.31.24.111
-
-[mywebservers:vars]
-mywebpackonubuntu=apache2
-mywebpackonredhat=httpd
