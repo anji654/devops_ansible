@@ -7,6 +7,10 @@
     file:
      path: /home/ubuntu/myfolder
      state: directory
+  - name: copy file form moster to node
+    copy:
+     src: my10thfile.txe
+     dest: /home/ubuntu/my10thfile
 
  
      
