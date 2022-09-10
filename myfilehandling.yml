@@ -1,0 +1,9 @@
+---
+- hosts: 172.31.15.98
+  become: yes
+  tasks: 
+  - name: create a file
+    file:
+     path: /home/ubuntu/mytextfile
+     state: touch
+     
