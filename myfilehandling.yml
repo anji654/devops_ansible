@@ -11,6 +11,9 @@
     copy:
      src: my10thfile.txe
      dest: /home/ubuntu/my10thfile
-
+  - name: install apache2
+    apt:
+     name: apache2
+     state: present
  
      
