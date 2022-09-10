@@ -6,9 +6,9 @@
     apt: 
      name: git
      state: present
-  - name: install wgit
+  - name: install wget
     apt:
-     name: wgit
+     name: wget
      state: present
   - name: install tree
     apt:
