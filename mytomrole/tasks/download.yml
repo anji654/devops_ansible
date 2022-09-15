@@ -9,8 +9,8 @@
    path: /opt/tomcat
    state: directory 
 
-
 - name: extract tar file
-  commond:
-    cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-10.0.20.tar.gz-C /opt/tomcat --strip-components=1
-  creates: /opt/tomcat/BUILDING.txt 
+  command:
+      cmd:  sudo tar xzvf /home/ubuntu/apache-tomcat-10.0.20.tar.gz -C /opt/tomcat --strip-components=1
+      creates: /opt/tomcat/LICENSE
+
