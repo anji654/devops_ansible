@@ -1,5 +1,5 @@
 ---
-- name: deplay java application on prod servers
+- name: deploy java application on prod servers
   get_url:
    url:  https://maha27aug22.s3.us-east-2.amazonaws.com/gameoflife.war
    dest: /opt/tomcat/webapps
