@@ -1,4 +1,3 @@
-
 ---
 - name: copy  tomcat-user file into ansible node side
   template: 
