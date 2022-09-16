@@ -1,7 +1,7 @@
 ---
 - name: copy tomcat-user file into ansible node side
   template:
-   src: templates/mytomcatuser.j2
+   src: templates/tomcatuser.j2
    dest: /opt/tomcat/conf/tomcat-users.xml
    
 
