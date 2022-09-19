@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: create ansible nodes
+    ec2:
+     key_name: 7777
+     instance_type: t2.micro
+     image: ami-048518755180005f6
+     wait: yes
+     group: default
+     count: 2
+     vpc_subnet_id: subnet-034c15b33dbff13e4
+     assign_public_ip: yes
+     region: us-east-2
+     instance_tags:
+        Name: asible node12
+    
