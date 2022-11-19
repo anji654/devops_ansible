@@ -1,6 +1,6 @@
 ---
 - name: deploy java application  on prod servers
   get_url:
-    url: https://maha27aug22.s3.us-east-2.amazonaws.com/gameoflife.war
+    url: http://52.37.94.20:8082/artifactory/testrepo4/com/maha/mahaLogin/
     dest: /opt/tomcat/webapps/
     force_basic_auth: yes
