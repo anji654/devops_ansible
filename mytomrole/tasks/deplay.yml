@@ -4,5 +4,5 @@
     url: http://52.37.94.20:8082/artifactory/testrepo4/com/maha/mahaLogin/5.0/mahaLogin-5.0.war
     dest: /opt/tomcat/webapps/
     force_basic_auth: yes
-    username: admin
-    password: Anji1994@
+    url_username: admin
+    url_password: Anji1994@
