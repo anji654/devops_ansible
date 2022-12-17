@@ -15,9 +15,9 @@
     notify: restart_apache2 
   - name: installing PHP modules
     apt: 
-      name: "{{item}}"  
+      name: "{{ item }}"  
       state: present
-    with_items: 
+    loop: 
     - php
     - PHP-common
     - php-mysql
