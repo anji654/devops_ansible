@@ -29,7 +29,7 @@
       dest: /var/www/html/info.php
     notify: restart_apache2
   handlers:
-  - name: restart the apache2 service
+  - name: restart_apache2
     service:
       name: apache2
       state: restarted  
