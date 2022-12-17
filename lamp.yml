@@ -1,0 +1,36 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: fail for other platform
+    fail:
+      msg: "this playbook is developed only for ubuntu 18.04"
+    when: ansible_os_family != "Debian"  
+  
+  - name: to install apache2
+    apt: 
+      name: apache2
+      update_cache: yes
+      state: present
+    notify: restart_apache2 
+  - name: installing PHP modules
+    apt: 
+      name: "{{item}}"  
+      state: present
+    loop: 
+    - php
+    - PHP-common
+    - php-mysql
+    - php-gd
+    - php-cli
+  - name: copy the info.php to /var/www/html
+    copy: 
+      src: phpfile
+      dest: /var/www/html/info.php
+    notify: restart_apache2
+  handlers:
+  - name: restart the apache2 service
+    service:
+      name: apache2
+      state: restarted  
+
