@@ -17,7 +17,7 @@
     apt: 
       name: "{{item}}"  
       state: present
-    loop: 
+    with_items: 
     - php
     - PHP-common
     - php-mysql
