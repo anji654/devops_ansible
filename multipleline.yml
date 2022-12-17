@@ -1,0 +1,16 @@
+--- 
+- hosts:
+  become: yes
+  tasks:
+  - copy: src=/etc/group
+          dest=/tmp
+          owner=ravi
+          group=ravi
+          mode=0664
+  - file: path=/tmp/gcp
+          state=directory
+  - apt:  name=apache2
+          state=present
+                       
+
+
