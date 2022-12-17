@@ -1,5 +1,5 @@
 --- 
-- hosts:
+- hosts: 172.31.23.86
   become: yes
   tasks:
   - copy: src=/etc/group
