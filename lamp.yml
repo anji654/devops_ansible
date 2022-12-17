@@ -19,7 +19,7 @@
       state: present
     loop: 
     - php
-    - PHP-common
+    - php-common
     - php-mysql
     - php-gd
     - php-cli
