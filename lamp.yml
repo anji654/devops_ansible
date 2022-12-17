@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: 172.31.23.86
   become: yes
   tasks: 
   - name: fail for other platform
