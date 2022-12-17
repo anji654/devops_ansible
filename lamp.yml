@@ -25,7 +25,7 @@
     - php-cli
   - name: copy the info.php to /var/www/html
     copy: 
-      src: phpfile
+      src: info.php
       dest: /var/www/html/info.php
     notify: restart_apache2
   handlers:
