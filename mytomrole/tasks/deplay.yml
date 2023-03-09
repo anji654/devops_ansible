@@ -1,7 +1,7 @@
 ---
 - name: deploy java application  on prod servers
   get_url:
-    url: https://myss31994.s3.us-east-2.amazonaws.com/mahaLogin-5.0.war
+    url: https://mybaket999.s3.us-east-2.amazonaws.com/mahaLogin-5.0.war
     dest: /opt/tomcat/webapps/
     force_basic_auth: yes
     
